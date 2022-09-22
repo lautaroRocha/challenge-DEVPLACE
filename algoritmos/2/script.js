@@ -8,7 +8,6 @@ const msgPass = document.querySelector('#msg-pass')
 let tries = 0;
 
 function memoryTest() {
-    console.log(tries)
     //revisa si los valores ingresados coinciden, de lo contrario procede a contar 3 intentos
     if(firstPass.value === repeatPass.value){
         msgPass.textContent = 'Felicitaciones, recordás tu contraseña'
