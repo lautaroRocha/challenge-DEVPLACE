@@ -1,0 +1,39 @@
+body, .alg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    gap:2rem;
+}
+
+.alg span{
+    width: 30vw;
+    height: max-content;
+}
+
+.alg input{
+    padding: .5rem;
+}
+
+.alg button {
+    height: 1.5rem;
+    width: 10%;
+    background-color: greenyellow;
+}
+.alg button:hover{
+    cursor: pointer;
+}
+
+#msg-pass{
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.guess button{
+    width: fit-content
+}
