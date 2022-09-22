@@ -16,7 +16,7 @@ function memoryTest() {
             reset()
         }  
     }else{
-        if(tries < 3){
+        if(tries < 2){
             tries++
             repeatPass.value = "";
             repeatPass.style.outline = '3px solid red';
