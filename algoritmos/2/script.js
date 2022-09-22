@@ -12,7 +12,10 @@ function memoryTest() {
     //revisa si los valores ingresados coinciden, de lo contrario procede a contar 3 intentos
     if(firstPass.value === repeatPass.value){
         msgPass.textContent = 'Felicitaciones, recordás tu contraseña'
-        setTimeout(reset, 2500)  
+        //resetea al detectar una tecla presionada
+        window.onkeypress = () => {
+            reset()
+        }  
     }else{
         if(tries < 3){
             tries++
@@ -20,10 +23,12 @@ function memoryTest() {
             repeatPass.style.outline = '3px solid red';
         }else{
             msgPass.textContent = 'Tenés que ejercitar la memoria'
-            setTimeout(reset, 2500)  
+            window.onkeypress = () => {
+                reset()
+            }
         }
     }
-
+   
     //reset de cantidad de intentos y mensajes en la ui
     function reset(){
         firstPass.value = "";
@@ -36,4 +41,8 @@ function memoryTest() {
 
 btnPass.onclick = () =>{
     memoryTest();
+}
+
+window.onkeypress = () => {
+
 }
