@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+<h1>Algoritmos</h1>
+
+<div class="alg">
+    <span>Ingresá un número y apretá el botón para saber si es primo o no</span>
+    <input id="input-number" type="number">
+    <button id="trigger-btn"></button>
+    <span id="msg"></span>
+</div>
+
+
+<div class="alg">
+    <span>Primero, escribe una contraseña</span>
+    <input type="password" id="first-pass">
+    <span>Ahora, repite la contraseña y aprieta el botón</span>
+    <input type="password" id="rpt-pass">
+    <button id="btn-pass"></button> 
+    <span id="msg-pass"></span>
+</div>
+
+
+<div class="alg">
+
+<span>Valor por hora</span>
+<input type="number" id="pay-per-hour">
+<span>Nombre</span>
+<input type="text" id="pay-worker-name"> 
+<span>Antiguedad</span> 
+<input type="number" id="pay-antiq"> 
+<span>Horas trabajadas en el mes</span> 
+<input type="number" id="pay-total-hours"> 
+<button id="pay-calc"></button>
+<span id="pay-result"></span>
+</div>
+
+
+<div class="alg guess">
+
+<button id="guess-btn">Empezar Juego</button>
+<span id="guess-msg"></span>
+<input type="number" name="" id="guess-input"> <button id="guess-check">chequear</button>
+
+
+</div>
+
+
+
+<div class="alg guess">
+
+    <span>Escribe un número e ingresalo apretando el botón. El programa termina si ingresás -1 o si apretás el botón rojo</span>
+
+    <input type="number" name="" id="num-input">
+    <button id="num-add">AÑADIR</button>
+    <button id="num-end" style="background-color:salmon">-1</button>
+    <span id="num-result"></span>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
